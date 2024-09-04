@@ -111,7 +111,7 @@ Create a directory '../Datasets_HSN' for the above three few-shot segmentation d
 >                 --traincampath ../Datasets_HSN/CAM_COCO/
 >                 --valcampath ../Datasets_HSN/CAM_COCO/
 > ```
-> * Training takes approx. 1 week until convergence (trained four V100 GPUs).
+> * Training takes approx. 1 week until convergence (trained four RTX 3090 GPUs).
 
 
 > ### Babysitting training:
@@ -125,7 +125,7 @@ Create a directory '../Datasets_HSN' for the above three few-shot segmentation d
 ## Testing
 
 > ### 1. PASCAL-5<sup>i</sup>
-> Pretrained models with tensorboard logs are available on our [[Google Drive](https://drive.google.com/drive/folders/1fB3_jUEw972lDZIs3_S7lj2F5rZVq4Nu?usp=sharing)].
+> Pretrained models with tensorboard logs are available on our [[Google Drive](https://drive.google.com/drive/folders/19IrHg6aPRXe_ukLjfaKKGXyCTl-xyGaH?usp=sharing)].
 > ```bash
 > python test.py --backbone {vgg16, resnet50} 
 >                --fold {0, 1, 2, 3} 
@@ -136,7 +136,7 @@ Create a directory '../Datasets_HSN' for the above three few-shot segmentation d
 
 
 > ### 2. COCO-20<sup>i</sup>
-> Pretrained models with tensorboard logs are available on our [[Google Drive](https://drive.google.com/drive/folders/1fB3_jUEw972lDZIs3_S7lj2F5rZVq4Nu?usp=sharing)].
+> Pretrained models with tensorboard logs are available on our [[Google Drive](https://drive.google.com/drive/folders/19IrHg6aPRXe_ukLjfaKKGXyCTl-xyGaH?usp=sharing)].
 > ```bash
 > python test.py --backbone {vgg16, resnet50} 
 >                --fold {0, 1, 2, 3} 
@@ -151,18 +151,5 @@ Create a directory '../Datasets_HSN' for the above three few-shot segmentation d
 ## BibTeX
 If you use this code for your research, please consider citing:
 ````BibTeX
-@inproceedings{ijcai2022p193,
-  title     = {Iterative Few-shot Semantic Segmentation from Image Label Text},
-  author    = {Wang, Haohan and Liu, Liang and Zhang, Wuhao and Zhang, Jiangning and Gan, Zhenye and Wang, Yabiao and Wang, Chengjie and Wang, Haoqian},
-  booktitle = {Proceedings of the Thirty-First International Joint Conference on
-               Artificial Intelligence, {IJCAI-22}},
-  publisher = {International Joint Conferences on Artificial Intelligence Organization},
-  editor    = {Lud De Raedt},
-  pages     = {1385--1392},
-  year      = {2022},
-  month     = {7},
-  note      = {Main Track},
-  doi       = {10.24963/ijcai.2022/193},
-  url       = {https://doi.org/10.24963/ijcai.2022/193},
-}
+
 ````
